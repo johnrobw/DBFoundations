@@ -268,6 +268,9 @@ GO
 SELECT * FROM vInventories;
 GO
 
+-- Test the binding by seeing if I can delete a protected column
+ALTER TABLE dbo.Inventories DROP COLUMN ProductID
+
 -- Question 2 (5% pts): How can you set permissions, so that the public group CANNOT select data 
 -- from each table, but can select data from each view?
 
